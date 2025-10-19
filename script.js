@@ -1,7 +1,7 @@
 // Weather Dashboard JavaScript
 class WeatherDashboard {
     constructor() {
-        this.apiKey = 'YOUR_API_KEY'; // Replace with actual API key
+        this.apiKey = 'a096e0aa345cd2fd2bb9cd472b99601e';
         this.baseURL = 'https://api.openweathermap.org/data/2.5';
         this.currentCity = 'Tehran';
         
@@ -322,7 +322,7 @@ class WeatherDashboardDemo extends WeatherDashboard {
 // Initialize the dashboard
 document.addEventListener('DOMContentLoaded', () => {
     // Check if API key is available, otherwise use demo mode
-    const hasApiKey = false; // Set to true when you have an API key
+    const hasApiKey = true; // Set to true when you have an API key
     
     if (hasApiKey) {
         new WeatherDashboard();

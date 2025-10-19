@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>دشبورد آب‌وهوا - پیش‌بینی ۵ روز آینده</title>
+    <meta name="description" content="نمایش پیش‌بینی ۵ روز آینده برای شهرهای مختلف" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <noscript>
+      برای استفاده از این برنامه، جاوااسکریپت را در مرورگر خود فعال کنید.
+    </noscript>
+
+    <header class="site-header">
+      <div class="container header-content">
+        <h1 class="title">دشبورد آب‌وهوا</h1>
+        <p class="subtitle">پیش‌بینی ۵ روز آینده</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="controls" aria-label="جستجوی شهر و موقعیت">
+        <div class="search-group">
+          <input
+            id="city-input"
+            class="text-input"
+            type="text"
+            placeholder="جستجوی شهر..."
+            aria-label="نام شهر را وارد کنید"
+            autocomplete="off"
+          />
+          <button id="loc-btn" class="btn btn-secondary" type="button" aria-label="استفاده از موقعیت مکانی من">
+            موقعیت من
+          </button>
+          <ul id="suggestions" class="suggestions" role="listbox" aria-label="پیشنهادهای شهر">
+            <!-- suggestions injected here -->
+          </ul>
+        </div>
+        <div id="status" class="status" role="status" aria-live="polite"></div>
+      </section>
+
+      <section class="current-place" aria-label="مکان انتخاب‌شده">
+        <div id="place-label" class="place-label">—</div>
+      </section>
+
+      <section class="forecast" aria-label="پیش‌بینی ۵ روز آینده">
+        <div id="forecast-grid" class="forecast-grid">
+          <!-- cards injected here -->
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>
+          داده‌های آب‌وهوا از
+          <a href="https://open-meteo.com" target="_blank" rel="noreferrer noopener">Open‑Meteo</a>
+          
+          تأمین می‌شود.
+        </small>
+      </div>
+    </footer>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>

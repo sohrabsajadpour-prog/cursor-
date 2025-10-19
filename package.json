@@ -1,0 +1,22 @@
+{
+  "name": "weather-dashboard-5day",
+  "version": "1.0.0",
+  "description": "A beautiful 5-day weather forecast dashboard in Persian",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000"
+  },
+  "keywords": [
+    "weather",
+    "dashboard",
+    "forecast",
+    "persian",
+    "farsi",
+    "5-day"
+  ],
+  "author": "Weather Dashboard",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
